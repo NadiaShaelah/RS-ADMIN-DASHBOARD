@@ -25,7 +25,7 @@ function NavBar() {
                     </li>
                 </ul>
             </nav>
-        </header>//shaelah.zebato@rschain2022.net
+        </header>
     )
 }
 
