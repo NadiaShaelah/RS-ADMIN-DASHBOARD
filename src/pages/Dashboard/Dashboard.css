@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.containerr {
+    display: grid;
+    grid-template-columns: 16rem 1fr 24rem;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "nav header header"
+        "nav content sidebar"
+        "nav content sidebar";
+    min-height: 100vh;
+}
+
+header {
+    grid-area: header;
+    /* padding: 2rem;
+    background-color: hotpink ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; */
+}
+
+nav {
+    grid-area: nav;
+    /* padding: 2rem;
+    background-color: indianred ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; */
+}
+
+main {
+    grid-area: content;
+    /* padding: 2rem;
+    background-color: deepskyblue ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; */
+}
+
+aside {
+    grid-area: sidebar;
+    /* padding: 2rem;
+    background-color: mediumslateblue ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; */
+}
+
+/* footer {
+    grid-area: footer;
+    padding: 2rem;
+    background-color: crimson ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+} */
+
+
+@media (max-width:1024px) {
+    .containerr {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(5rem, auto) 1fr minmax(5rem, auto) auto;
+        grid-template-areas: "header"
+        "nav"
+        "content"
+        "sidebar"
+        "footer";
+    }
+}
